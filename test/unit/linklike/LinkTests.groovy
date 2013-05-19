@@ -10,8 +10,10 @@ import org.junit.*
  */
 @TestFor(Link)
 class LinkTests {
-
-    void testSomething() {
-       fail "Implement me"
+	
+    void testAddVote(){
+    	def l = new Link(title: 'ddd',url: 'www')
+    	l.addVote(2)
+    	assertEquals 2,l.voteScore
     }
 }
